@@ -1,0 +1,12 @@
+<div class="flex flex-col">
+    <label id="listbox-label" class="block text-sm font-medium w-full text-center pb-1">
+        {{"THEME"|translate}}
+      </label>
+    <div class="flex flex-row gap-4 items-center ">
+        <em class="transition-all pi pi-sun text-2xl {{theme?'opacity-70 text-primary-200':'scale-125 text-amber-500' }}"></em>
+        <app-toggle [(checked)]="theme" (checkedChange)="toggle()"></app-toggle>
+        <em class="transition-all pi pi-moon text-lg {{theme?'scale-125 text-gray-50':'opacity-70 text-primary-200' }}"></em> 
+    
+    </div>
+    
+</div>

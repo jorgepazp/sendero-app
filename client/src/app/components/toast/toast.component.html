@@ -1,0 +1,32 @@
+<div class="relative">
+    <div class="absolute z-50 w-screen  ">
+        <div  class="fixed flex flex-col h-auto right-0  rotate-180 bottom-6">
+            
+            <div *ngFor="let toast of toasts |async" (mouseenter)="isHoveringElement(toast,true)" (mouseleave)="isHoveringElement(toast,false)" [class]="' mb-4 w-full mx-5 rotate-180 max-w-[90vw] sm:max-w-[40vw] bg-bluegray-50 bg-opacity-60 backdrop-filter backdrop-blur-xl shadow-2xl rounded-lg overflow-hidden '+(toast.visible?'slide-in-top':'slide-out-top')">
+                <div class="m-8 flex md:flex-row gap-4">
+                    <span (click)="closeToast(toast)" class="absolute right-2 top-2 hover:scale-90 transition-all cursor-pointer"><em class="text-primary-900 pi pi-times text-xl" ></em></span>
+                    <div class="flex-5 flex items-center justify-center">
+                    <span><em [class]="(toast.icon?toast.icon:'')+ ' text-3xl'" [style]="'color:'+(toast.color?toast.color:defaultColor)"></em></span>
+                    </div>
+                    <div class="flex flex-col min-w-[215px]">
+                        <h3 class="text-xl font-bold">{{toast.title}}</h3>
+                        <h3 class="">{{toast.description}}</h3>
+                    </div>
+                </div>
+                <div class="h-2" [style]="'width:'+(100-(toast.timer?.update|async)*100/timeOfLife)+'%;background-color:'+(toast.color?toast.color:defaultColor)"></div>
+   
+            </div>
+            <!-- (16, 185, 129) green -->
+    
+          
+        </div>
+    </div>
+    
+</div>
+<!-- 
+<div class="fixed z-[100] top-1/2 bottom-1/2 flex flex-col gap-8">
+    <button class="p-2 bg-cyan-600" (click)="button()">HOLA</button>
+    <button class="p-2 bg-green-600" (click)="button()">HOLA</button>
+
+
+</div> -->

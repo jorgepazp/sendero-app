@@ -1,0 +1,71 @@
+{
+    "HELLO":"Hola",
+    "LANGUAGE":"Language",
+    "THEME":"Theme",
+    "HOME":"Home",
+    "STACK":"My skills",
+    "WHAT_I_DO":"My career",
+    "ABOUT_ME":"About me",
+    "CONTACT":"Contact",
+    "WRITE_ME":"Write Me",
+    "CONTRIBUTIONS":"Contributions",
+    "HERO":{
+        "NAME":"Jorge Paz",
+        "HELLO_1":"Hello",
+        "HELLO_2":"I'm Jorge Paz",
+        "HELLO_3":"a Software Engineer."
+    },
+    "SKILLS":{
+        "TITLE":"My Skills",
+        "DESCRIPTION":"I'm a responsible, commited and on a continuous learning person.  I'm in love with designing and developing apps, and all the stuff this area has to offer. These are some of the tools I use on a daily basis. Some skills are inherent to my profession, such as data modeling, agile management, and programming paradigms."
+    },
+    "CAREER":{
+        "TITLE":"My Career",
+        "UBB":{
+            "TITLE":"University of the Bío-Bío",
+            "SUBTITLE":"Civil Engineering in C.S.",
+            "DESCRIPTION":"This is where it all started. I didn't knew about programming before and here I got to learn the basics of coding and how to create a solution from scratch, passing through the multiple stages of a product lifecycle."
+        },
+        "CLK":{
+            "TITLE":"Clikma LMS",
+            "SUBTITLE":"Fullstack Developer",
+            "DESCRIPTION":"Ah, the first job. Worked on the Clikma App, a LMS platform built on a Springboot API and consumed by an Angular client. Altough it was not my first time using Angular, I learned a lot of its core concepts and web development in general. I also got to work on a GCP cloud environment and deployment pipelines. "
+        },
+        "EFX":{
+            "TITLE":"Equifax LATAM",
+            "SUBTITLE":"Frontend Lead",
+            "DESCRIPTION":"My current job. I'm on a splendid multi-cultural, agile team and we are currently working on company products. Here I saw for the first time the precautions we as developer have to have when it comes to data security. As such, we follow known security standards and I got to resolve lots of vulnerabilities and do testing on all the code we write. "
+        }
+    },
+    "ABOUT":{
+        "TITLE":"About me",
+        "MOTTO":"Make it cool :)",
+        "DESCRIPTION_1":"From a very young age I was attracted to design, so I started to imagine and build a lot of stuff, such as sprites, badges, a lot of logos and banners above all. Later, on University I was able to learn about programming and how software is built.  ",
+        "DESCRIPTION_2":"I like challenges, so facing to new technologies and projects feels always so gratifying , at the end of the day the stack does not make the developer. So I strongly believe in my ability to transition freely on the different areas the IT has to offer."
+    },
+    "LEARN_MORE":"Learn more about me",
+    "MOTTO":"Let's build it together",
+    "EMAIL":"E-mail",
+    "NAME":"Name",
+    "SUBJECT":"Subject",
+    "SEND":"Send",
+    "SENDING":"Sending",
+    "SENT":"Sent",
+    "MADE_BY_SELF":"hand-crafted ♥ ",
+    "MAIL":{
+        "SUCCESS":{
+            "TITLE":"Hooray! 😎",
+            "DESC":"I have successfully received your message. I'll answer you as soon as possible."
+        },
+        "ERROR":{
+            "TITLE":"Oops, something went wrong 😬",
+            "DESC":"An error occurred while processing your message. Please try again later."
+        },
+        "TOOLTIPS":{
+            "NAME":"Come on, I know you have one",
+            "EMAIL":"Enter a valid email",
+            "REQUIRED":" required fields"
+        }
+    }
+
+}

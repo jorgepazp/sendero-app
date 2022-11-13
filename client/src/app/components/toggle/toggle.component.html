@@ -1,0 +1,2 @@
+<input [(ngModel)]="checked" #switch  (ngModelChange)="onChange($event)" id="switch" class="switch switch-main"  type="checkbox">
+<label for="switch" [style]="'background-color:'+(checked?color[0]:color[1])"></label>

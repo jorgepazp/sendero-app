@@ -3,23 +3,51 @@ version: '3.9'
 services:
   # Database
   db:
-    image: mongo
-    container_name: db
-    restart: always
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: password
-      # Create a new database. Please note, the
-      # /docker-entrypoint-initdb.d/init.js has to be executed
-      # in order for the database to be created
-      MONGO_INITDB_DATABASE: site
-    volumes:
-      - ./db-init.js:/docker-entrypoint-initdb.d/db-init.js:ro
-      - ./mongo-volume:/data/db
+    # POSTGRESQL CONTAINER
+    image: 'postgres:latest'
+    container_name: local_pgdb
+    restart: 'no'
     ports:
-      - '27017-27019:27017-27019'
-    networks:
-      - site
+      - '5678:5432'
+    user: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - './postgres_data:/var/lib/postgresql/data'
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin4_container
+    restart: always
+    ports:
+      - "5050:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: root
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+    depends_on:
+      - db 
+    links: 
+      - db 
+
+    # MONGO CONTAINER ------------
+    # image: mongo
+    # container_name: db
+    # restart: always
+    # environment:
+    #   MONGO_INITDB_ROOT_USERNAME: root
+    #   MONGO_INITDB_ROOT_PASSWORD: password
+    #   # Create a new database. Please note, the
+    #   # /docker-entrypoint-initdb.d/init.js has to be executed
+    #   # in order for the database to be created
+    #   MONGO_INITDB_DATABASE: site
+    # volumes:
+    #   - ./db-init.js:/docker-entrypoint-initdb.d/db-init.js:ro
+    #   - ./mongo-volume:/data/db
+    # ports:
+    #   - '27017-27019:27017-27019'
+    
   #client
   client:
     build: client/.
@@ -39,18 +67,21 @@ services:
   server:
     build: server/.
     image: server-app
-    command: npm run start:prod
+    command: npm run start:dev
     user: root
     depends_on:
       - db
     ports:
       - 3000:3000
     restart: unless-stopped
-    environment:
-      # Use the username and password found in the db-init.js file instead
-      # of the root username.
-      MONGODB_URI: mongodb://user:secretPassword@database/site
+    # environment:
+    #   # Use the username and password found in the db-init.js file instead
+    #   # of the root username.
+    #   MONGODB_URI: mongodb://user:secretPassword@database/site
     networks:
       - site
 networks:
   site:
+volumes:
+  local_pgdata:
+  pgadmin-data:

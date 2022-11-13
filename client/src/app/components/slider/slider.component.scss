@@ -1,0 +1,77 @@
+
+  
+  @mixin white-gradient {
+    background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  }
+  
+  $animationSpeed: 40s;
+  
+  // Animation
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 7))}
+  }
+  
+  
+  // Styling
+  .slider {
+
+    height: auto;
+    margin: auto;
+    overflow:hidden;
+    position: relative;
+    width: 1200px;
+    
+    // &::before,
+    // &::after {
+    //   @include white-gradient;
+    //   content: "";
+    //   height: 500px;
+    //   position: absolute;
+    //   width: 200px;
+    //   z-index: 2;
+    // }
+    
+    // &::after {
+    //   right: 0;  
+    //   top: 0;
+    //   transform: rotateZ(180deg);
+    // }
+  
+    // &::before {
+    //   left: 0;
+    //   top: 0;
+    // }
+
+    &__blur{
+      content: "";
+      height: 500px;
+      position: absolute;
+      width: 200px;
+      z-index: 2;
+      &__left{
+       left: 0;
+       top: 0;
+      }
+      &__right{
+        right: 0;
+        top: 0;
+       }
+    }
+    
+    
+    .slide-track {
+      animation: scroll $animationSpeed linear infinite;
+      display: flex;
+      width: calc(250px * 14);
+    }
+    
+    .slide {
+      height: auto;
+      width: 500px;
+      display: flex;
+      border-left: 1px solid;
+      @apply border-primary-900 px-6;
+    }
+  }
+

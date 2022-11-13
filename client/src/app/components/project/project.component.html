@@ -1,0 +1,27 @@
+<section class="mt-5 mr-5 min-h-screen h-auto py-24">
+    <div class="relative flex h-auto w-screen  lg:flex-row flex-col ">
+        <div class=" flex flex-1 p-7 md:p-14 lg:p-24  flex-col justify-center relative ">
+                <div class="flex items-center mb-5 ">
+                    <div class="h-0.5 w-10 bg-primary-600 dark:bg-primary-300 mr-5 ">
+                    </div>
+                    <span class="font-semibold text-primary-600 dark:text-primary-300 font-mono text-2xl">Mis habilidades 🔥</span>
+                </div>
+                <p class="font-mono text-lg pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas pariatur delectus aperiam reprehenderit, cumque veritatis esse in voluptatem quis laudantium quasi obcaecati accusamus deserunt est ex quisquam deleniti cupiditate nesciunt.</p>
+                <!-- <div data-aos="animation-scale-y" data-aos-delay="200" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    <ng-container *ngFor="let stack of skillset">
+                        <stack [data]="stack" ></stack>
+                    </ng-container>
+                </div> -->
+                <app-slider [bgColor]="darkMode.currentBg"></app-slider>
+
+    
+         
+        </div>
+      
+    </div>
+</section>
+<app-timeline></app-timeline>
+
+<ng-template #frontend></ng-template>
+<ng-template #microservices></ng-template>
+<ng-template #others></ng-template>

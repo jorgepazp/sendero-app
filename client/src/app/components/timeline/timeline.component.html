@@ -1,0 +1,20 @@
+    <div class="w-full">
+
+        <ul class="timeline">
+            <li *ngFor="let d of data;let odd = odd" [ngClass]="odd?'timeline-inverted':''">
+                <div class="timeline-image"></div>
+                <div class="timeline-panel">
+                    <div class="mb-4">
+                        <h4 class=" mb-6">
+                            <span class=" p-3  rounded-xl tracking-[.5rem] font-extrabold text-xl font-serif">{{d.period}}</span>
+                        </h4>
+                        <h4 class="font-extrabold text-3xl tracking-widest dark:text-primary-100 text-primary-600 ">{{d.title}}</h4>
+                        <h6 class="font-semibold text-xl dark:text-primary-300 text-bluegray-800 ">{{d.subtitle}}</h6>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="text-lg tracking-wide font-mono">{{d.description}}</p></div>
+                </div>
+            </li>
+           
+        </ul>
+    </div>

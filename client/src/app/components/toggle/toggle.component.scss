@@ -1,0 +1,65 @@
+
+
+// the switch
+// ----------
+.switch {
+    opacity:0;
+    pointer-events:none;
+    position:absolute;
+    + label {
+      --background: red;
+      --width: 3rem;
+      --height: 1.5rem;
+      --padding: .25rem;
+      --padding-x: var(--padding);
+      --padding-y: var(--padding);
+      --ball-size: calc(var(--height) - (var(--padding-y) * 2));
+      --ball-width: var(--ball-size);
+      --ball-height: var(--ball-size);
+      --radius: 1000px;
+      --ball-radius: calc(var(--radius) - var(--padding-x));
+      display:inline-flex;
+      align-items:center;
+      width:var(--width);
+      height:var(--height);
+      background:var(--background);
+      border-radius:var(--radius);
+      cursor:pointer;
+      transition:.25s ease; 
+      
+      &:after {
+        content:"";
+        width: var(--ball-width);
+        height: var(--ball-height);
+        background:var(--color);    
+        border-radius:var(--ball-radius);
+        margin-left:var(--padding-x);
+        transition:.25s ease;
+        transform:translateX(0);
+      }
+    }
+    
+    &:checked + label {
+      background-color: var(--background-active, var(--background));
+      
+      &:after {
+        background-color: var(--color-active, var(--color));
+        transform:translateX(calc(var(--width) - var(--ball-width) - var(--padding-x) * 2)) 
+      }
+    }
+  }
+  
+  
+  // switch instances
+  // ---------------
+  .switch-main + label {
+    --width: 5rem;
+    --height:2.5rem;
+    --background: rgb(252, 35, 64);
+    --background-active: rgb(79, 222, 121);
+    
+    --color: white;
+    --color-active:white;
+  }
+
+  

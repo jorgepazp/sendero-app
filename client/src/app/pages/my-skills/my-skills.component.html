@@ -1,0 +1,20 @@
+<section class="mt-5 mr-5 h-auto py-24">
+    <div class="relative flex h-auto w-screen  lg:flex-row flex-col ">
+        <div class=" flex flex-1 p-7 md:p-14 lg:p-24  flex-col justify-center relative  max-w-[100vw] ">
+                <div class="flex items-center mb-5 ">
+                    <div class="h-0.5 w-10 bg-primary-600 dark:bg-primary-300 mr-5 ">
+                    </div>
+                    <span class="font-semibold flex text-primary-600 dark:text-primary-300 font-mono text-2xl items-center">{{"SKILLS.TITLE"|translate}} <img src="assets/images/fire.png" class="ml-2 w-10" alt="fire"></span>
+                </div>
+                <p class="font-mono text-lg pb-3">
+                    {{'SKILLS.DESCRIPTION'|translate}}
+                </p>
+
+                <app-slider class="pt-24" [value]="skillset" [bgColor]="darkMode.currentBg" [darkMode]="darkMode.darkModeEnabled"></app-slider>
+
+    
+         
+        </div>
+      
+    </div>
+</section>

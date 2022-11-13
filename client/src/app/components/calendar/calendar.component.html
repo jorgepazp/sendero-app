@@ -1,0 +1,57 @@
+<div class="card p-2 mb-3">
+    <div id="cal" class="m-0 w-100 mb-3">
+        <div class=" w-100 d-flex justify-content-between align-items-center mb-2">
+            <div style="flex: 1;" class="d-flex justify-content-end">
+                <div style="flex: 6;">
+                    <span class="lead">
+                        
+                        <!-- <select [(ngModel)]="selectedMonth" name="" id="months">
+                            <option *ngFor="let month of getI18nMonths();let i = index" [value]="i" [label]="month|titlecase"></option>
+                        </select> -->
+                        {{getCurrentMonth()|titlecase}} {{getYear()}}</span>
+                </div>
+                <div style="flex: 4;" class="d-flex justify-content-end align-items-center">
+                    <button (click)="substractMonth()" class="btn btn-light mr-2 btn-sm">
+                        <em class="pi pi-angle-left"></em>
+                    </button>
+                    <button (click)="addMonth()" class="btn btn-light btn-sm">
+                        <em class="pi pi-angle-right"></em>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <table id="days" class=" w-100">
+            <caption style="display: none;"></caption>
+            <th id="null" style="display: none;"></th>
+            <ng-container *ngFor="let day of getI18nDays()">
+                <td>{{day |slice:0:3 }}</td>
+            </ng-container>
+    
+        </table>
+        <div id="calendar">
+            <table class="curr w-100">
+                <caption style="display: none;"></caption>
+                <th id="null" style="display: none;"></th>
+                <tbody>
+                    <ng-container *ngFor="let row of [].constructor(calendarDayRows);let i = index">
+                        <tr>
+                            <ng-container *ngFor="let row of [].constructor(7);let j = index">
+                                <td>
+                                    <div class="date font-weight-bold d-flex justify-content-center align-items-center" (click)="selectDay(i,j)"
+                                    [ngClass]="{'text-light past':getCalendarDayDate(i,j)<today,'today':areDatesEqual(getCalendarDayDate(i,j),today),'is-selected':isSelected(getCalendarDayDate(i,j)),'calendar-highlight':hasToHighlight(getCalendarDayDate(i,j))}">
+                                        <span >
+                                            {{getCalendarDay(i,j)}}
+                                        </span>
+                                    </div>
+                                    
+                                </td>
+                            </ng-container>                        
+                        </tr>
+                    </ng-container>
+    
+                </tbody>
+            </table>
+    
+        </div>
+    </div>
+</div>

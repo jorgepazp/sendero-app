@@ -1,0 +1,35 @@
+<div class="w-screen h-full flex flex-col xl:flex-row items-center">
+    <div class=" flex flex-grow p-7 md:p-14 lg:p-24  flex-col justify-center relative ">
+        <!-- <div class="bg-white border border-opacity-50 border-gray-100 drop-shadow-lg rounded-md p-5 bg-opacity-60 bg-clip-padding backdrop-blur-sm"> -->
+            <div class="flex items-center mb-5 ">
+                <div class="h-0.5 w-10 bg-primary-600 dark:bg-primary-300 mr-5 ">
+                </div>
+                <span class="font-semibold flex text-primary-600 dark:text-primary-300 font-mono text-2xl items-center">{{"CAREER.TITLE"|translate}} <img src="assets/images/man.png" class="ml-2 w-10" alt="fire"></span>
+            </div>
+
+            <h4 class="text-4xl font-semibold" data-aos="animation-scale-y" data-aos-delay="400">Desarrollo aplicaciones y servicios web.</h4>
+        <h1 data-aos="animation-scale-y" data-aos-delay="1000" class=" text-5xl lg:text-6xl xl:text-7xl font-semibold font-sans dark:text-bluegray-50">
+            <p>Desde el back hasta el front,</p>    
+            <p> mi pasión es el código.</p>
+        </h1>
+
+        <div data-aos="animation-scale-y" data-aos-delay="1500" class="flex mt-5 lg:mt-20">
+
+                <button  (click)="navigationService.scrollToId('contact')" class="p-5 transition-all bg-primary-600 focus:ring-8 focus:ring-primary-300 active:translate-y-2 rounded-2xl text-gray-50 text-xl">
+                    <div class="flex justify-between items-center">
+                        <span class="mr-5">Contáctame</span>
+                        <em class="pi pi-arrow-right"></em>
+    
+                    </div>
+                </button>
+            
+        </div>
+    </div>
+        <div data-aos="fade-in" data-aos-delay="2000" data-aos-duration="500" class=" pb-6 relative flex justify-center flex-1 h-full ">
+            <div class="scale-110 lg:scale-150 xl:right-1/2  xl:-top-20 h-full mt-5 xl:mt-5">
+                <app-scene></app-scene>
+            </div>
+            <!-- <div class="absolute z-0 w-2/3 h-96 bg-red-400 rounded-full"></div> -->
+        </div>
+    
+</div>

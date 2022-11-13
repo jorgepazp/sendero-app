@@ -1,0 +1,8 @@
+input.ng-invalid.ng-touched{
+    @apply bg-red-100 text-red-700;
+}
+
+
+// .ng-invalid :not(.ng-pristine)  input{
+//     @apply bg-red-100 text-red-700;
+// }

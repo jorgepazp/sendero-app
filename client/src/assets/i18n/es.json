@@ -1,0 +1,71 @@
+{
+    "HELLO":"Hola",
+    "LANGUAGE":"Idioma",
+    "THEME":"Tema",
+    "HOME":"Inicio",
+    "STACK":"Habilidades",
+    "WHAT_I_DO":"Lo que hago",
+    "ABOUT_ME":"Sobre mí",
+    "CONTACT":"Contacto",
+    "WRITE_ME":"Escríbeme",
+    "CONTRIBUTIONS":"Contribuciones",
+    "HERO":{
+        "NAME":"Jorge Paz",
+        "HELLO_1":"Hola",
+        "HELLO_2":"Soy Jorge Paz",
+        "HELLO_3":"ingeniero de software."
+    },
+    "SKILLS":{
+        "TITLE":"Mis Habilidades",
+        "DESCRIPTION":"Soy una persona responsable, comprometida, y en un aprendizaje continuo.Estoy enamorado del diseño y desarrollo de aplicaciones, y todo lo que esta área tiene para ofrecer. Estas son algunas de las herramientas que utilizo en mi día a día. Algunas habilidades son inherentes a mi profesión, tales como modelado de datos, gestión ágil y paradigmas de programación."
+    },
+    "CAREER":{
+        "TITLE":"Mi Carrera",
+        "UBB":{
+            "TITLE":"Universidad del Bío-Bío",
+            "SUBTITLE":"Ingeniero Civil en Informática",
+            "DESCRIPTION":"Aquí es donde empezó todo. No sabía nada de programación antes de esto y aquí pude aprender lo fundamental de la codificación y cómo crear una solución desde 0, pasando por las distintas etapas del cíclo de vida de un producto."
+        },
+        "CLK":{
+            "TITLE":"Clikma LMS",
+            "SUBTITLE":"Desarrollador Fullstack",
+            "DESCRIPTION":"Ah, el primer trabajo. Trabajé en la aplicación de Clikma, una plataforma de LMS construida con una API Springboot y consumida por un cliente Angular. Aunque no fue mi primera vez trabajando con Angular, aquí pude aprender un montón de conceptos clave del framework y del desarrollo web en general. También tuve la oportunidad de trabajar en un entorno cloud de GCP y con pipelines de despliegue. "
+        },
+        "EFX":{
+            "TITLE":"Equifax LATAM",
+            "SUBTITLE":"Frontend lead",
+            "DESCRIPTION":"Mi trabajo actual. Estoy en un espectacular equipo ágil multicultural, y nos encontramos trabajando en productos de la empresa. Aquí vi por primera vez las precauciones que nosotros como desarrolladores debemos tener cuando se trata de la seguridad de datos. Por esto, seguimos estándares conocidos de seguridad y me ha tocado resolver varias vulnerabilidades y hacer testing del código que escribimos."
+        }
+    },
+    "ABOUT":{
+        "TITLE":"Sobre mí",
+        "MOTTO":"Házlo bacán :)",
+        "DESCRIPTION_1":"Desde muy pequeño me llamó la atención el diseño, por lo que empecé a imaginar y crear todo tipo de cosas, sprites, firmas, muchos logos y sobre todo afiches. Más tarde en la Universidad pude conocer la programación y cómo se construye el software.",
+        "DESCRIPTION_2":"Me gustan los desafíos, por lo que enfrentarme a nuevas tecnologías y proyectos es siempre muy gratificante, al final del día el stack no hace al desarrollador. Por lo que confío en mis habilidades para transitar en las distintas áreas que ofrece la informática."
+    },
+    "MOTTO":"Let's build it together",
+    "EMAIL":"Email",
+    "LEARN_MORE":"Descubre más de mí",
+    "NAME":"Nombre",
+    "SUBJECT":"Asunto",
+    "SEND":"Enviar",
+    "SENDING":"Enviando",
+    "SENT":"Enviado",
+    "MADE_BY_SELF":"hecho a mano ♥ ",
+    "MAIL":{
+        "SUCCESS":{
+            "TITLE":"¡Listo! 😎",
+            "DESC":"He recibido tu mensaje. Te responderé lo antes posible."
+        },
+        "ERROR":{
+            "TITLE":"Uh, algo salió mal 😕",
+            "DESC":"Ha ocurrido un error mientras se procesaba tu mensaje. Inténtalo nuevamente más tarde."
+        },
+        "TOOLTIPS":{
+            "NAME":"Vamos, sé que tienes uno",
+            "EMAIL":"Introduce un correo válido",
+            "REQUIRED":" campos requeridos"
+        }
+    }
+
+}

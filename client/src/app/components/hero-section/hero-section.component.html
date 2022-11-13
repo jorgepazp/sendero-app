@@ -1,0 +1,25 @@
+<div class="relative flex h-screen w-screen  lg:flex-row flex-col ">
+    <div class=" flex flex-1 p-7 md:p-14 lg:p-24  flex-col justify-center relative ">
+        <!-- <div class="bg-white border border-opacity-50 border-gray-100 drop-shadow-lg rounded-md p-5 bg-opacity-60 bg-clip-padding backdrop-blur-sm"> -->
+            <pre-title [text]="'Jorge Paz'"> </pre-title>
+        <h1 data-aos="animation-scale-y" data-aos-delay="200" class=" text-5xl lg:text-6xl xl:text-7xl font-semibold font-sans dark:text-bluegray-50">
+            <span class="flex">{{"HERO.HELLO_1"|translate}} <img class="ml-2" src="assets/images/hand.png" alt=""> </span>
+            <p>{{"HERO.HELLO_2"|translate}}</p>
+            <p class="leading-tight">{{"HERO.HELLO_3"|translate}}</p></h1>
+
+        <div class="flex mt-20 w-min " (click)="ns.scrollToId('project')">
+            <button class="transition-all rounded-2xl flex items-center p-5 focus:ring-8 focus:ring-primary-200 bg-gray-50  hover:scale-95">
+                <em class="pi pi-angle-double-down animate-bounce text-primary-400"></em>
+            </button>
+            <div class="cursor-pointer flex ml-5 items-center text-bluegray-700 dark:text-primary-200 w-56">
+                {{"LEARN_MORE"|translate}}
+            </div>
+            </div>
+    </div>
+    <div data-aos="fade-in" class="z-30 relative  sm:block flex-1 overflow-hidden">
+        <div class="mt-5 mr-5 absolute w-full lg:bottom-0 xl:top-0">
+            <app-isometric-cubes ></app-isometric-cubes>
+        </div>
+        <div class="w-full h-80 bg-gradient-to-t absolute bottom-0 dark:from-bluegray-900 from-primary-100"></div>
+    </div>
+</div>

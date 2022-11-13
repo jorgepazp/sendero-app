@@ -1,0 +1,52 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import 'aos/dist/aos.css'; 
+
+html{
+    overflow-x: hidden;
+}
+
+.button{
+    @apply transition-all cursor-pointer select-none rounded-2xl text-gray-50 bg-bluegray-900 active:bg-bluegray-800  active:translate-y-0.5 flex gap-3 font-mono justify-center items-center font-semibold tracking-wider
+}
+
+.button-lg{
+    @apply p-6
+}
+
+.button-sm{
+    @apply p-2
+}
+
+[data-aos="animation-scale-y"].aos-animate {
+    -webkit-transform: translateY(0) scaleY(1);
+    -ms-transform: translateY(0) scaleY(1);
+    transform: translateY(0) scaleY(1);
+    opacity: 1;
+}
+
+[data-aos="animation-scale-y"] {
+    -webkit-transform: translateY(40px) scaleY(1.4);
+    -ms-transform: translateY(40px) scaleY(1.4);
+    transform: translateY(40px) scaleY(1.4);
+    opacity: 0;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    -o-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #8f54a0 #ffffff;
+  }
+
