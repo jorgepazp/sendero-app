@@ -2,7 +2,7 @@
 <toast></toast>
 <div [class]="'pt-24  z-0 w-screen bg-gray-50 dark:!bg-bluegray-900 text-bluegray-800 font-sans dark:text-bluegray-50 '+(lockScroll?'max-h-screen overflow-y-hidden ':'')">
         <app-navbar  [direction]="direction" [sticky]="sticky"></app-navbar>
-        <main class="px-16">
+        <main class="px-4 md:px-16 lg:px-24">
             <router-outlet></router-outlet>
         </main>
         <!-- <div [class]="sticky?'pt-20 ':''">

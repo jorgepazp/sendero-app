@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
+import { CartProduct } from 'src/app/models/cart.interface';
+import { CartService } from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-cart',
@@ -7,9 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public cart:CartService,
+    private fb:FormBuilder
+    ) { }
 
   ngOnInit(): void {
   }
 
+  remove(item:CartProduct){
+    this.cart.deleteFromCart(item)
+  }
+
+  add(item:CartProduct){
+    this.cart.addToCart(item);
+  }
+  
 }

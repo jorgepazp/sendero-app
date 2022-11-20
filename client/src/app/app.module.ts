@@ -22,6 +22,7 @@ import { CartComponent } from './pages/cart/cart.component';
 import { ProductComponent } from './pages/product/product.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -38,7 +39,8 @@ export function createTranslateLoader(http: HttpClient) {
     CartComponent,
     ProductComponent,
     HomeComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,

@@ -13,13 +13,12 @@
     </div>
 
     <div id="custom-wrapper" class="xl:divide-x divide-primary-500 z-20 flex flex-col xl:flex-row  bg-gray-50 rounded-3xl w-11/12 md:w-4/6 p-2 md:py-24 md:px-8 lg:p-24 drop-shadow-2xl text-bluegray-900">
-        <div class="h-96 lg:h-[500px] w-screen sm xl:flex-[2]" >
-            <div class="flex absolute"  data-aos="fade-up" data-aos-delay="0">
-    
-                <app-scene class=" w-full "></app-scene>
-            </div>
+        <div class="h-96 relative lg:h-[500px] flex-[1] w-full  xl:flex-[2] flex flex-col" >
+            <img src="assets/images/cleta.png" class="object-contain justify-self-center w-auto p-8" alt="">
+            <h1  data-aos="fade-down-right" data-aos-delay="300" class=" min-h-min px-8 top-72  text-5xl sm:top-80 lg:top-96 xl:top-80 w-11/12  font-bold mix-blend-exclusion text-primary-50 ">
+                {{"MOTTO"|translate}}
+            </h1>
             <div class="flex h-full items-end ">
-                <h1  data-aos="fade-down-right" data-aos-delay="300" class="min-h-min px-8 top-72 md:w-[30%] xl:w-[100%] text-5xl sm:text-6xl sm:top-80 lg:top-96 xl:top-80 w-11/12 2xl:w-3/4  md:text-5xl   lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold mix-blend-exclusion text-primary-50 ">{{"MOTTO"|translate}}</h1>
             </div>
             
             
@@ -110,6 +109,77 @@
         
     </div>
 </div>
-<div class="bg-primary-700 text-primary-100 h-full w-screen p-2 text-center">
+<div class="w-full h-24 bg-primary-600"></div>
+<div class="w-full h-12 bg-primary-700"></div>
+<div class="w-full h-6 bg-primary-800"></div>
+<div class="w-full flex flex-col lg:flex-row pt-24 pb-8 px-12 lg:px-48 bg-slate-800 ">
+    <div class="flex-[3] flex flex-col gap-8 ">
+        <logo [color]="'white'"></logo>
+        <p class="font-mono text-sm tracking-widest text-slate-200">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nihil hic officiis accusantium odio. Praesentium dolor eius sunt nesciunt sed necessitatibus, rem, cumque at impedit nostrum iusto esse quam ut.</p>
+        <img class="w-32" src="assets/images/Con-apoyo-de-Sercotec_txtblanco.png" alt="">
+    </div>
+    <section class="flex lg:flex-row flex-col flex-[7] gap-12 justify-center ">
+        <div class="flex flex-col ">
+            <h4 class="text-white font-mono text-2xl tracking-wider">CATEGORÍAS</h4>
+            <ul class="pl-8 text-slate-400 my-4 flex flex-col gap-4 text-xl">
+                <li class="cursor-pointer transition-all hover:text-primary-100 hover:border-b-2 border-primary-500 ">
+                    <a >Marco</a>
+                </li>
+                <li class="cursor-pointer transition-all hover:text-primary-100 hover:border-b-2 border-primary-500 ">
+                    <a >Manubrio</a>
+                </li>
+                <li class="cursor-pointer transition-all hover:text-primary-100 hover:border-b-2 border-primary-500 ">
+                    <a >Sillín</a>
+                </li>
+                <li class="cursor-pointer transition-all hover:text-primary-100 hover:border-b-2 border-primary-500 ">
+                    <a >Accesorios</a>
+                </li>
+                
+                <li class="cursor-pointer transition-all hover:text-primary-400">
+                </li>
+                <li class="cursor-pointer transition-all hover:text-primary-400">
+                </li>
+                <li class="cursor-pointer transition-all hover:text-primary-400">
+                </li>
+            </ul>
+        </div>
+        <div class="flex flex-col ">
+            <h4 class="text-white font-mono text-2xl tracking-wider">ENLACES</h4>
+            <ul class="pl-8 text-slate-400 my-4 flex flex-col gap-4 text-xl">
+                <li class="cursor-pointer transition-all hover:text-primary-100 hover:border-b-2 border-primary-500 ">
+                    <a >¿Quíenes somos?</a>
+                </li>
+                <li class="cursor-pointer transition-all hover:text-primary-100 hover:border-b-2 border-primary-500 ">
+                    <a >Garantías</a>
+                </li>
+                <li class="cursor-pointer transition-all hover:text-primary-100 hover:border-b-2 border-primary-500 ">
+                    <a >Términos y condiciones</a>
+                </li>
+                <li class="cursor-pointer transition-all hover:text-primary-100 hover:border-b-2 border-primary-500 ">
+                    <a >Preguntas Frecuentes</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="flex flex-col ">
+            <h4 class="text-white font-mono text-2xl tracking-wider">SOCIAL</h4>
+            <ul class="pl-8 text-slate-400 my-4 flex flex-col gap-4 text-xl">
+                <li class="cursor-pointer transition-all hover:text-primary-100 hover:border-b-2 border-primary-500 ">
+                    <a >Facebook</a>
+                </li>
+                <li class="cursor-pointer transition-all hover:text-primary-100 hover:border-b-2 border-primary-500 ">
+                    <a >Instagram</a>
+                </li>
+                <li class="cursor-pointer transition-all hover:text-primary-100 hover:border-b-2 border-primary-500 ">
+                    <a >TikTok</a>
+                </li>
+                
+            </ul>
+        </div>
+
+        
+    </section>
+</div>
+<div class="bg-slate-700 text-primary-100 h-full w-screen p-2 text-center">
       {{"MADE_BY_SELF"|translate}}
 </div>

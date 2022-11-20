@@ -1,0 +1,87 @@
+[
+    {
+        "uuid": "462fff14-ff0c-49e4-bfa7-eced247e3485",
+        "name": "BOLSO DE MARCO MONTAÑITA /Toptube",
+        "description": "<p>Las montañas albergan el nacimiento de las aguas libres, esencial para el desarrollo de la vida.</p> <p>Bolsa pequeña pero esencial para llevar todo a mano. Muy fácil de acceder a su contenido y manipular incluso durante la marcha con una sola mano.</p>",
+        "features": [
+            "Exterior en Nylon impermeable y duratex 600D.",
+            "Interior en Nylon impermeable 300D.",
+            "Bolsillo interior de malla.",
+            "Apertura de Cierre YKK impermeable.",
+            "Sujeción de Velcros desmontables, incluye 3 correas.",
+            "Interior de Eva."
+        ],
+        "volume": "1.1lts",
+        "weight": "0.1g",
+        "dimension": "10 cm x 22 cm x 5 cm espesor",
+        "categoryId": 1
+    },
+    {
+        "uuid": "a1ba81ee-c071-4e59-9b7f-9b6e5f7b9d35",
+        "description": "<p>Pensada inicialmente para llevar una botella extra o una botella Nalgene, sin embargo, su uso se ha extendido gracias a su increíble versatilidad.</p><p>Puedes acceder a su contenido mientras pedaleas con una sola mano. Perfecta para picar mientras vas en marcha, llevar una cámara compacta, una botella o lo que se te ocurra. Con un bolsillo exterior de malla para tener un extra de capacidad.</p><p>El interior de EVA cumple la función de aislante para poder mantener la temperatura del agua si decides usarla como porta botella extra.</p><p>Unida con velcros al manillar y potencia y con un elástico para la horquilla. Funciona para cualquier forma de manillar.</p><p>Ten en cuenta que su forma de apertura no es resistente a la lluvia. Pero no te preocupes cuando llueva porque tiene un orificio en la base para evacuar toda el agua que pueda entrar.</p>",
+        "name": "Portabotella Estuario /Stembag",
+        "features": [
+            "Exterior en Cordura 600D con nylon 320 impermeable.",
+            "Cierre elástico con una sola mano.",
+            "Anclaje modulable con Velcro.",
+            "Posibilidad de montaje en ambos lados del manillar.",
+            "Bolsillo exterior.",
+            "Interior en Oxford 300D impermeable.",
+            "Orificio para salida de agua.",
+            "Cubierto en eva."
+        ],
+        "volume": "1.4 lts",
+        "weight": "0.1g",
+        "dimension": "18 x 10 cm Ø",
+        "categoryId": 2
+    },
+    {
+        "uuid": "65b8a97f-0761-492f-8c3f-b6c3bb3b5076",
+        "name": "Maxi Roll top BOSQUE/ Handlebar",
+        "description": "<p>Bolso para manubrio muy versátil, ya que al ser ligero y expandible puedes llevar todas las cosas que necesites. Se sujeta firme y rápidamente al manubrio, las correas de la cintura se meten detrás del panel y luego se desanclan para llevarlo como riñonera o usarlo con una correa colgada al hombro. Maravilloso!</p><p>Cuenta con un forro interior flotante, costuras frontales selladas y una base forrada de EVA que mantiene la temperatura al interior, (por si quieres llevar un pack de cervezas a la playa ;). Todo esto ayuda a impedir el paso del agua directa desde el exterior hacia el interior. Si bien nada cosido es completamente impermeable, el agua tendrá serias dificultades para entrar.    </p><p>En cuanto a su capacidad, Bosque es de 1 a 5 lts cuando se enrolla y 10,5 lts completamente abierto. Obviamente desenrollado implicará que tus cosas puedan caerse! Por lo que el volumen seguro máximo es de 8 lts. Suficiente para llevar repuestos, comida, todos los cachivaches que se te ocurran.    </p>",
+        "features": ["5 a 8 lts.", "Apertura de Roll top.", "Bolsillo exterior con cierre impermeable YKK.", "Exterior de Nylon impermeable y Duratex 600D.", "Interior de Nylon impermeable 300D.", "3 bolsillos interiores.", "Correas laterales para ajustar la tensión de carga al cuerpo.", "Correa para usarlo colgado al hombro.", "Panel de guardado de correas para usarlo en el manillar." ],
+        "volume": " 5 lts cerrado, 10.5 lts completamente abierto.",
+        "weight": "0.5g",
+        "dimension": "35 cm x 25 cm x12 cm",
+        "categoryId": 2
+    },
+    {
+        "uuid": "7e9a8f40-602e-4fb3-87cb-8c8f57900edb",
+        "description": "<dfn>    Marsupial endémico, conocido como fósil viviente, es un agente de recuperación de los bosques. Protejamos su hábitat para conservar su especie por mucho tiempo más.</dfn><p>    Pequeño, discreto y amarradito a la tija, como monito del monte en una ramita, este mini bolso te acompaña para que lleves lo esencial como tu kit de herramientas, parchado, o emergencias. </p>",
+        "name": "MONITO DEL MONTE / Seatpack mini",
+        "features": ["Exterior en Duratex 600D", "Interior en Nylon impermeable 300D.", "Bolsillo interior de malla", "Detalles reflectantes", "Abrazado al sillín con correa de Nylon y elástico ¡Es su colita!"],
+        "volume": "840 cc",
+        "weight": null,
+        "dimension": "14 cm x 10 cm x 6 cm ",
+        "categoryId": 3
+    },
+    {
+        "uuid": "91e12e3d-caae-4fef-8c7d-a4bade946184",
+        "description": "<dfn>    Los humedales S.O.Stienen a la biodiversidad.</dfn><p>Bolso de apertura Roll top ajustable de 5 lts cerrado a 6.5 lts completamente abierto. Especial para llevar lo necesario para una ruta corta. Lleva tu kit de herramientas, bombín, algo para beber y un cortavientos sin problema.Su sistema de correas permite un acople y desacople rápido. </p>",
+        "name": "HUMEDALES/ Mini bolso de sillín / Seatpack mini",
+        "features": ["Exterior en Nylon impermeable y Duratex 600D.", "Interior en Nylon impermeable 300D.", "Malla elástica exterior con detalles reflectantes.", "Apertura Rolltop con broches Tip-top.", "Incluye correa para usarlo fuera de la bici."],
+        "volume": "6.5lts",
+        "weight": "0.2g",
+        "dimension": "45 cm x 12,5 cm x 12 cm ",
+        "categoryId": 3
+    },
+    {
+        "uuid": "0c0444e5-7459-4d7f-9821-9aae061cc158",
+        "description": null,
+        "name": "Bolso de sillín TRUENO / Seatbag",
+        "features": ["Apertura de rolltop ajustable de 10 a 16 lts", "Exterior en Duratex 600 y Nylon impermeable.", "Parte frontal y trasera inferior en PVC Náutico que actúa como tapa barro.", "Interior en Nylon impermeable 300D con costuras selladas manualmente.", "Dos Bolsillos laterales.", "Malla elástica superior.", "Detalles reflectantes.", "Correa incluida para usarlo fuera de la bici al hombro."],
+        "volume": "Ajustable hasta 16 lts",
+        "weight": null,
+        "dimension": "64 cm x 19 cm x 14 cm",
+        "categoryId": 1
+    },
+    {
+        "uuid": "3850e8e5-b15d-46a8-b178-bf739b7aa53a",
+        "description": " <p>Los bolsos de marco son una excelente manera de maximizar el espacio de almacenamiento en tu bicicleta y te permiten empacar el peso bajo para que sea agradable y estable.        El bolso se puede personalizar en todos los sentidos para que sea tu mejor compañero de viajes. Por ejemplo puede ser ½ bolso de marco o completo, con subdivisiones y cantidad de bolsillos que necesites.                El tamaño de la bolsa depende del espacio que quieras tener disponible para guardar tus pertenencias, o del espacio que no quieras perder en el marco, como por ejemplo ocupando el espacio del portabotellas.                La bolsa se puede sujetar al marco de dos maneras, usando un cordón paracord o correas de velcro, esta elección depende de tus preferencias y necesidades, por ejemplo, el paracord es más duradero que el velcro, pero el velcro es más fácil para ajustarlo a la bici.<p>                  <h3>Tipos de bolso<h3>                  <h4>Media Bolsa con cierre doble<h5>         <p>Esto significa un bolsillo principal en un lado y un bolsillo plano en el otro.<p>                  <h4>Bolsa de marco completo, cierre doble (con divisor horizontal)<h5>            <p>Esto significa que hay un compartimento superior e inferior en un lado, que están separados por un separador de tela extraíble.<p>                ﻿      <h5>Bolsa de cuadro completo, cremallera doble (con bolsillo plano) </h5>              <p>Esto significa que hay un compartimento principal en un lado y un bolsillo plano para guardado rápido en el otro lado.<p>                              <ul>Extras:<ul>                           <li> Bolsillos de malla<li>                    <li>Puerto para manguera<li>                     </ul>                  <h5>Cómo puedo obtener el calce perfecto de la bolsa de marco:<h5>                 <p>Lo hago mediante un entretenido procedimiento en donde me mandas una foto de tu bicicleta con todo lo que quieres incluir (caramagiolas u otros bolsos) donde se vea  posicionada completamente paralela de tal forma que el único punto de contacto sea la punta del manillar.                Tomar una buena foto es clave para para este calce perfecto (Como zapato de Cenicienta único.. ok no)        Cómo puedes hacerlo                Ojalá que sea paralela a una pared de color uniforme, a ser posible blanca o que se diferencie la bici de lo demás.                Primeramente debes tomar la medida del largo del tubo superior, inferior, de asiento y dirección.                El siguiente paso es tomar unos 3 metros de distancia respecto a la bici y agáchate si es necesario, de modo que tu lente - objetivo apunte directamente al centro del cuadro y en la foto del vea solo una de las barras de la horquilla y solo la parte mas cercana del manillar (para que la perspectiva sea la correcta).                Por último tomar la medida del diámetro del tubo superior y las demás medidas de los tubos para mayor precisión de la sujeción.<p>",
+        "name": "BOLSO DE MARCO PERSONALIZADO",
+        "features": [],
+        "volume": null,
+        "weight": null,
+        "dimension": null
+    }
+]

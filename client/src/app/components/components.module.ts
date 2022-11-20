@@ -21,6 +21,7 @@ import { ToastModule } from './toast/toast.module';
 import { RouterModule } from '@angular/router';
 import { NewsletterComponent } from './newsletter/newsletter.component';
 import { ProductFilterComponent } from './product-filter/product-filter.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -48,7 +49,9 @@ import { ProductFilterComponent } from './product-filter/product-filter.componen
     SliderModule,
     RouterModule,
     TimelineModule,
-    ToastModule
+    ToastModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   exports:[
     HeroSectionComponent,

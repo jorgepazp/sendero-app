@@ -1,20 +1,19 @@
 <div [class]="'w-screen bg-gray-50 z-[999] flex justify-between py-4 px-5 md:px-16 h-24 top-0 '+(sticky?'fixed':'')">
-    <div [class]="'transition-all '+(direction?'':'scale-75')">
+    <div [class]="'transition-all flex items-center'">
         <logo [routerLink]="['/']"></logo>
 
     </div>
-    <ul class="flex items-center gap-3 dark:!text-slate-50 text-slate-900">
+    <ul class="flex items-center gap-1 lg:gap-8 dark:!text-slate-50 text-slate-900 ">
         
-        <li>
-            <h1 [routerLink]="['products']" class="font-mono text-2xl">Productos</h1>
+        <li class="border-r-2 border-primary-400 pr-3 lg:pr-8">
+            <h1 [routerLink]="['products']" class="cursor-pointer font-mono text-base lg:text-2xl tracking-widest ">Catálogo</h1>
         </li>
-        <li>
-            <button [routerLink]="['cart']"  [class]="'cursor-pointer h-[min-content]  hover:text-primary-400'"><em [class]="'transition-all text-xl xl:text-5xl pi pi-shopping-cart active:scale-50 p-5 '+ (direction?'':'scale-75')"></em></button>
+      
+        <li class="">
+            <button [routerLink]="['cart']"  [class]="'transition-all active:scale-75 cursor-pointer h-[min-content]  focus:hover:text-primary-700 rounded-md hover:bg-primary-200 '">
+                <em [class]="'transition-all text-xl xl:text-3xl pi pi-shopping-cart  p-5 '"></em></button>
             </li>
-        <li>
-            <button (click)="openMenu()" [class]="'cursor-pointer h-[min-content]  hover:text-primary-400'"><em [class]="'transition-all text-xl xl:text-5xl pi pi-bars active:scale-50 p-5 '+ (direction?'':'scale-75')"></em></button>
-            
-        </li>
+
      
     </ul>
 </div>

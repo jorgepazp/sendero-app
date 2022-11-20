@@ -18,6 +18,9 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  /**
+   * @deprecated
+   */
   openMenu(){
     this.ns.overlay.next({status:true,scrollTop:document.documentElement.scrollTop});
   }

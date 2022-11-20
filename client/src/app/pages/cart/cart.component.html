@@ -1,15 +1,67 @@
 
-    <section class="my-4">
-        <h1 class="text-4xl font-mono">TU CARRITO</h1>
-        <h6>TOTAL (2 productos) <span class="font-bold">$21.990</span></h6>
-        <p>
-            Los artículos del carrito no están reservados.
-        </p>
-        <select title="Cantidad" class="block py-2.5 px-0 w-full font-mono font-bold text-slate-900 bg-transparent border-0 border-b-2 border-slate-800 appearance-none focus:outline-none focus:ring-0 focus:border-primary-500">
-            <option selected>1</option>
-            <option value="US">2</option>
-            <option value="CA">3</option>
-            <option value="FR">4</option>
-            <option value="DE">5</option>
-        </select>
+    <section class="my-4 lg:mx-48 flex gap-8">
+        <div class="flex-[3] flex flex-col gap-4">
+            <h1 class="text-4xl font-mono">TU CARRITO</h1>
+            <h6>TOTAL (2 productos) <span class="font-bold">$21.990</span></h6>
+            <p>
+                Los artículos del carrito no están reservados.
+            </p>
+            <ng-container *ngFor="let item of cart.items">
+                <article class="flex  border border-slate-700">
+                    <img src="assets/images/IMG_5890.jpeg" class="aspect-1 w-52" alt="">
+                    <div class="p-4 flex justify-between relative flex-col w-full">
+                        <em class="pi pi-times self-end absolute transition-all hover:text-red-500 cursor-pointer "></em>
+                        <div>
+                            <h4 class="text-2xl uppercase">Portabotella Estuario /Stembag</h4>
+                            <div class="mt-4 flex gap-4 divide-x divide-slate-400">
+                                <h6 class="text-xs"><em class="mr-2 pi pi-arrows-h"></em> Dimensiones: 18 x 10 cm</h6>
+                                <h6 class="text-xs"><em class="mx-2 pi pi-box"></em> Peso: 3kg</h6>
+                                <h6 class="text-xs"><em class="ml-2 pi pi-caret-down"></em> Volumen: 2lts</h6>
+                            </div>
+                        </div>
+                        <h4 class="text-xl tracking-wider">$5.990</h4>
+    
+    
+                        <select id="cantidad" title="Cantidad" class="w-24 block py-2.5 px-0 font-mono font-bold text-slate-900 bg-transparent border-0 border-b-2 border-slate-800 appearance-none focus:outline-none focus:ring-0 focus:border-primary-500">
+                            <option selected>1</option>
+                            <option value="US">2</option>
+                            <option value="CA">3</option>
+                            <option value="FR">4</option>
+                            <option value="DE">5</option>
+                        </select>
+                    </div>
+                    
+                </article>
+            </ng-container>
+            
+           
+        </div>
+        <div class="flex flex-[1] flex-col">
+            <button class="p-4 mb-8 disabled:opacity-60 disabled:cursor-not-allowed disabled:active:translate-y-0 transition-all font-mono bg-green-500 focus:ring-8 focus:ring-green-300 active:translate-y-2 rounded-2xl text-gray-50 text-lg">
+                <div class="flex justify-between items-center">
+
+                        <span class="mr-5">Agendar Pedido</span>
+                        <em class="pi pi-whatsapp"></em>
+                    
+
+                </div>
+            </button>
+
+            <div class=" border-dashed p-3 border-slate-400 border">
+                <h1 class="text-2xl font-mono mb-4">RESUMEN DEL PEDIDO</h1>
+                <div class="flex justify-between font-mono">
+                    <h6 class="text-sm tracking-widest">1 PORTABOTELLA ESTUARIO /STEMBAG</h6>
+                    <h6 class="text-sm tracking-widest">$5.990</h6>
+                </div>
+                <div class="flex justify-between font-mono">
+                    <h6 class="text-sm tracking-widest">IVA 19%</h6>
+                    <h6 class="text-sm tracking-widest">$990</h6>
+                </div>
+                <div class="flex justify-between font-mono mt-4 pt-4 border-t border-slate-400">
+                    <h6 class="text-sm tracking-widest font-bold">TOTAL</h6>
+                    <h6 class="text-sm tracking-widest font-bold">$6.990</h6>
+                </div>
+            </div>
+        </div>
+
     </section>

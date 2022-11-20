@@ -1,5 +1,5 @@
 import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
-import Category from "./category.entity";
+import Category from "../../categories/entities/category.entity";
 
 @Entity({name:'products'})
 class Product {
@@ -13,6 +13,14 @@ class Product {
     product_name:string;
     @Column({type:'varchar'})
     product_description:string;
-    @ManyToOne(type => Category, category => category.category_id ) category:Category;
+    @Column({type:'numeric'})
+    product_weight:number;
+    @Column({type:'numeric'})
+    product_volume:number;
+    @Column({type:'varchar'})
+    product_dimension:string;
+
+    @ManyToOne(type => Category, category => category.category_id )
+    category_id:Category;
 }
 export default Product;
