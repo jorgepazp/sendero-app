@@ -24,7 +24,8 @@ export class DarkModeService {
     private rendererFactory: RendererFactory2
   ) {
     this.renderer = this.rendererFactory.createRenderer(null, null);
-    this.decideInitialScheme();
+    //TODO: removed as not needed
+    // this.decideInitialScheme();
   }
 
   decideInitialScheme(){
