@@ -12,3 +12,7 @@
 !.vscode/extensions.json
 mongo-volume
 postgres_data
+jorgepaz.*
+sendero.*
+**.ppk
+**.rev
