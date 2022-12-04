@@ -55,6 +55,7 @@ services:
     user: root
     ports:
       - 80:80
+      - 443:443
     restart: always
     environment:
       # Use the username and password found in the db-init.js file instead
@@ -62,9 +63,8 @@ services:
       MONGODB_URI: mongodb://user:secretPassword@database/site
     volumes: 
       - ./client/:/dist/src/app/
-      - certbotdata:/var/www/certbot
-      - ./conf.d:/etc/nginx/conf.d:ro
-      # ['./client/:/dist/src/app/',' certbotdata:/var/www/certbot','./conf.d:/etc/nginx/conf.d:ro','./certbot/conf:/etc/nginx/ssl']
+      - ./certbot/www:/var/www/certbot:ro
+      - ./client/nginx.d:/etc/nginx/conf.d:ro
     networks:
       - site
   #server
@@ -95,4 +95,3 @@ networks:
 volumes:
   local_pgdata:
   pgadmin-data:
-  certbotdata:
