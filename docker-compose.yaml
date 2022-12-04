@@ -54,8 +54,7 @@ services:
     image: client-app
     user: root
     ports:
-      - 80:80
-      - 443:443
+      - 8000:80
     restart: always
     environment:
       # Use the username and password found in the db-init.js file instead
