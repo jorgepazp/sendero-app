@@ -25,4 +25,5 @@ COPY --from=build /dist/src/app/dist/client /usr/share/nginx/html
 COPY /conf.d  /etc/nginx/conf.d
 # Exposing a port, here it means that inside the container 
 # the app will be using Port 80 while running
+CMD ["nginx", "-g", "daemon off;"]
 EXPOSE 80
