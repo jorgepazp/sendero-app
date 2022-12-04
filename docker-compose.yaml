@@ -7,8 +7,8 @@ services:
     image: 'postgres:latest'
     container_name: local_pgdb
     restart: 'no'
-    ports:
-      - '5678:5432'
+    # ports:
+    #   - '5678:5432'
     user: postgres
     environment:
       POSTGRES_USER: postgres
@@ -52,8 +52,8 @@ services:
   client:
     build: client/.
     image: client-app
-    ports:
-      - 80:80
+    # ports:
+    #   - 80:80
     restart: always
     network_mode: "host"
     environment:
@@ -75,8 +75,8 @@ services:
     user: root
     depends_on:
       - db
-    ports:
-      - 3000:3000
+    # ports:
+    #   - 3000:3000
     restart: unless-stopped
     # environment:
     #   # Use the username and password found in the db-init.js file instead
