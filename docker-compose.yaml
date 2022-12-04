@@ -60,7 +60,7 @@ services:
       # Use the username and password found in the db-init.js file instead
       # of the root username.
       MONGODB_URI: mongodb://user:secretPassword@database/site
-    volumes: ['./client/:/dist/src/app/']
+    volumes: ['./client/:/dist/src/app/',' ./certbot/data:/var/www/certbot','./conf.d:/etc/nginx/conf.d','./certbot/conf:/etc/nginx/ssl']
     networks:
       - site
   #server
