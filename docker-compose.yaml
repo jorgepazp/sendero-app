@@ -55,6 +55,7 @@ services:
     ports:
       - 80:80
     restart: always
+    network_mode: "host"
     environment:
       # Use the username and password found in the db-init.js file instead
       # of the root username.
