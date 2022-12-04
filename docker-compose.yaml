@@ -65,8 +65,8 @@ services:
       - /etc/nginx:/etc/nginx
       # - ./certbot/www:/var/www/certbot:ro
       - ./client/conf.d:/etc/nginx/conf.d
-    networks:
-      - site
+    # networks:
+    #   - site
   #server
   server:
     build: server/.
@@ -82,16 +82,16 @@ services:
     #   # Use the username and password found in the db-init.js file instead
     #   # of the root username.
     #   MONGODB_URI: mongodb://user:secretPassword@database/site
-    networks:
-      - site
+    # networks:
+    #   - site
   # certbot:
   #   image: certbot/certbot:latest
   #   command: certonly --webroot --webroot-path=/var/www/certbot --email paz.jorge1@gmail.com --agree-tos --no-eff-email -d jorgepaz.cl -d www.jorgepaz.cl
   #   volumes:
   #     - ./certbot/www/:/var/www/certbot/:rw
   #     - ./certbot/conf/:/etc/letsencrypt/:rw
-networks:
-  site:
+# networks:
+#   site:
 volumes:
   local_pgdata:
   pgadmin-data:
