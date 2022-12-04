@@ -52,7 +52,6 @@ services:
   client:
     build: client/.
     image: client-app
-    user: root
     ports:
       - 80:80
     restart: always
@@ -63,7 +62,7 @@ services:
     volumes: 
       - ./client/:/dist/src/app/ 
       - ./certbot/www:/var/www/certbot:ro
-      - ./client/nginx.d:/etc/nginx/conf.d:ro
+      - ./client/nginx.conf:/etc/nginx/conf.d:ro
     networks:
       - site
   #server
