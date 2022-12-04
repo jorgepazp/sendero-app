@@ -62,7 +62,7 @@ services:
     volumes: 
       - ./client/:/dist/src/app/ 
       # - ./certbot/www:/var/www/certbot:ro
-      - ./client/conf.d:/etc/nginx/conf.d:ro
+      - ./client/conf.d:/etc/nginx/conf.d
     networks:
       - site
   #server
