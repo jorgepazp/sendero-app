@@ -61,7 +61,7 @@ services:
       MONGODB_URI: mongodb://user:secretPassword@database/site
     volumes: 
       - ./client/:/dist/src/app/ 
-      - ./certbot/www:/var/www/certbot:ro
+      # - ./certbot/www:/var/www/certbot:ro
       - ./client/conf.d:/etc/nginx/conf.d:ro
     networks:
       - site
@@ -82,12 +82,12 @@ services:
     #   MONGODB_URI: mongodb://user:secretPassword@database/site
     networks:
       - site
-  certbot:
-    image: certbot/certbot:latest
-    command: certonly --webroot --webroot-path=/var/www/certbot --email paz.jorge1@gmail.com --agree-tos --no-eff-email -d jorgepaz.cl -d www.jorgepaz.cl
-    volumes:
-      - ./certbot/www/:/var/www/certbot/:rw
-      - ./certbot/conf/:/etc/letsencrypt/:rw
+  # certbot:
+  #   image: certbot/certbot:latest
+  #   command: certonly --webroot --webroot-path=/var/www/certbot --email paz.jorge1@gmail.com --agree-tos --no-eff-email -d jorgepaz.cl -d www.jorgepaz.cl
+  #   volumes:
+  #     - ./certbot/www/:/var/www/certbot/:rw
+  #     - ./certbot/conf/:/etc/letsencrypt/:rw
 networks:
   site:
 volumes:
